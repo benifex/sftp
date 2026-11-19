@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sftp
+  description: Docker image for a simple SFTP server built on OpenSSH, with users defined by environment or config file.
+  tags:
+    - language:shell
+    - ci:github-actions
+  annotations:
+    # TODO: no SonarQube project found for this repo - add sonarqube.org/project-key when one exists
+    github.com/project-slug: benifex/sftp
+    wiz.io/repository-external-id: github.com##benifex/sftp
+spec:
+  type: service
+  lifecycle: production
+  owner: group:benifex/unknown-ownership
